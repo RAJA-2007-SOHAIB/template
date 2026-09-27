@@ -14,7 +14,6 @@ export default merge(common, {
     rules: [
       {
         test: /\.css$/i,
-        // This completely overrides the common loaders for production
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
     ],
